@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <div class="header__container">
+            <img class="header__logoAlura" src="./imagenes/logoAlura_Celular.svg" alt="logo de Alura">
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="main__left">
+
+
+            <textarea name="user__input" class="user__input"  placeholder="Ingrese su texto aquí"></textarea>
+        
+            <div class="buttons__wrapper">
+                <div class="alert__wrapper">
+                    <img src="./imagenes/exclamation.svg" class="exclamation__icon" alt="signo de exclamación" >
+                    <p class="warning__message">Sólo letras mayúsculas y minúsculas</p>
+                </div>
+
+                <div class="buttons__left__wrapper">
+                    <button class="button__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="button__desencriptar" onclick="btnDesencriptar()" disabled>Desencriptar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="main__right">
+
+        <aside class="aside">
+
+            <div class="encrypted__unencrypted__text" style="z-index: 1;">
+                <p class="copy"></p>
+            </div>
+
+            <img class="img__muneco" src="./imagenes/muneco.svg" style="z-index: 2; position: relative;" alt="hombre cabello azul mirando con lupa un diamante">
+            
+            <div class="no__message__wrapper encrypted__unencrypted__message">
+                <h4 class="h4 ">Ningún mensaje fue encontrado</h4> 
+                <!-- <h4 class="h4">fue encontrado</h4>  -->
+                <h5 class="h5">Ingresa el texto que desees encriptar o desencriptar.</h5>
+            </div>
+
+            <div class="button__copiar__wrapper">
+            <!-- <button id="button__copiar" onclick="btnCopiar()">Copiar</button> -->
+            <button id="button__copiar" onclick="btnCopiar()" style="display: none;">Copiar</button>
+        </div>
+
+        </aside>
+
+        </section>
+
+
+
+    </main>
+<!-- 
+    <footer>
+
+    </footer> -->
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
